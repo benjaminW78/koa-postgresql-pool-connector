@@ -23,14 +23,13 @@ router
         ))
     })
     .get('/films',function*(){
-        console.log(this);
         console.log(this.sqlQuery('postgres://postgres:postgres@localhost:5432/postgres',
             "SELECT * FROM films;"
         ))
     })
     .post('/addFilm/',function*(){
         console.log(this.sqlQuery('postgres://postgres:postgres@localhost:5432/postgres',
-            "INSERT INTO films (title,did,kind,len) VALUES ("++");"
+            "INSERT INTO films (title,did,kind,len) VALUES ("+""+");"
         ))
     })
 
