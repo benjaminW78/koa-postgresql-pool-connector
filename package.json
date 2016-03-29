@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "devExample": "nodemon examples/index.js",
-    "test": "test"
   },
   "repository": {
     "type": "git",
