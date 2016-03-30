@@ -27,6 +27,7 @@ function *dbConnection(next) {
                 return yield result;
             } catch (eXception) {
                 console.log('dbConnection #sqlQuery', eXception.stack);
+                return eXception ;
             }
         });
     }
