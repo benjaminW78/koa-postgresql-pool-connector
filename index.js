@@ -5,14 +5,14 @@ function *dbConnection(next) {
 
     /**
      * module for db connection
-     * @param configDb {} Object that contain databaseUrl key
+     * @param databaseUrl key
      * @param query to execute by client
-     * @returns promise
+     * @return promise
      */
-    function sqlQuery(configDb, query) {
+    function sqlQuery(databaseUrl, query) {
         const co = require('co'),
             pg = require('co-pg')(require('pg')),
-            conString = configDb.databaseUrl;
+            conString = databaseUrl;
 
         return co(function *pool() {
             try {
@@ -27,6 +27,7 @@ function *dbConnection(next) {
                 return yield result;
             } catch (eXception) {
                 console.log('dbConnection #sqlQuery', eXception.stack);
+                return eXception ;
             }
         });
     }

@@ -1,0 +1,33 @@
+{
+  "name": "koa-postgresql-pool-connector",
+  "version": "1.0.0",
+  "description": "it's wrapper ready to use for making query to a postgresql database very easy and simple.",
+  "main": "index.js",
+  "scripts": {
+    "devExample": "nodemon examples/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjaminW78/koa-postgresql-pool-connector.git"
+  },
+  "keywords": [
+    "koa-pg"
+  ],
+  "author": "benjaminW78",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benjaminW78/koa-postgresql-pool-connector/issues"
+  },
+  "homepage": "https://github.com/benjaminW78/koa-postgresql-pool-connector#readme",
+  "devDependencies": {
+    "koa": "^1.2.0",
+    "koa-bodyparser": "^2.0.1",
+    "koa-joi-router": "^3.0.0",
+    "nodemon": "^1.9.1"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "co-pg": "^1.3.1",
+    "pg": "^4.5.1"
+  }
+}
