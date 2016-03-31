@@ -1,6 +1,6 @@
 {
   "name": "koa-postgresql-pool-connector",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "it's wrapper ready to use for making query to a postgresql database very easy and simple.",
   "main": "index.js",
   "scripts": {
