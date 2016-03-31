@@ -53,7 +53,7 @@ router
            yield this.sqlQuery('postgres://postgres:postgres@localhost:5432/postgres',
                 'INSERT INTO films (title,kind) VALUES (\''+data.title+'\',\''+data.kind+'\')')
             .then(function(data){
-                console.log(arguments)p
+                console.log(arguments);
                 if(data.name ==="error"){
                     that.status = 500;
                     that.body = data;

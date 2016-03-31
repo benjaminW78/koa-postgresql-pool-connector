@@ -4,7 +4,18 @@
   "description": "it's wrapper ready to use for making query to a postgresql database very easy and simple.",
   "main": "index.js",
   "scripts": {
-    "devExample": "nodemon examples/index.js"
+    "devExample": "nodemon examples/index.js",
+    "test": "jest"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "testFileExtensions": [
+      "js"
+    ]
   },
   "repository": {
     "type": "git",
@@ -20,14 +31,16 @@
   },
   "homepage": "https://github.com/benjaminW78/koa-postgresql-pool-connector#readme",
   "devDependencies": {
+    "babel-jest": "10.0.1",
+    "jest-cli": "0.10.0",
     "koa": "^1.2.0",
-    "koa-bodyparser": "^2.0.1",
-    "koa-joi-router": "^3.0.0",
-    "nodemon": "^1.9.1"
+    "koa-bodyparser": "2.0.1",
+    "koa-joi-router": "3.0.0",
+    "nodemon": "1.9.1"
   },
   "dependencies": {
-    "co": "^4.6.0",
-    "co-pg": "^1.3.1",
-    "pg": "^4.5.1"
+    "co": "4.6.0",
+    "co-pg": "1.3.1",
+    "pg": "4.5.1"
   }
 }
