@@ -91,7 +91,6 @@ describe(pathAndName, function () {
                 expect(middle.done).toBeTruthy();
                 expect(middle.value).toBeDefined();
                 expect(middle.value).toMatch('query undefined/null');
-                console.log(middle)
 
             });
         });
