@@ -4,7 +4,7 @@ function *dbConnection(next) {
     'use strict';
 
     /**
-     * module for db connection
+     * module for db pool connection
      * @param databaseUrl key
      * @param query to execute by client
      * @return promise
@@ -15,6 +15,13 @@ function *dbConnection(next) {
         return co(pool.bind(this,pg,databaseUrl,query));
     }
 
+    /**
+     * Exposed function for jest unit test. THIS IS A PRIVATE FUNCTION DON'T USE IT DIRECTLY
+     * @param pg
+     * @param conString
+     * @param query
+     * @returns {*}
+     */
     function *pool( pg,conString,query) {
         try {
             const connectResults = yield pg.connectPromise(conString),
