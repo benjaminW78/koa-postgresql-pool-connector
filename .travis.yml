@@ -5,5 +5,5 @@ services:
   - postgresql
 before_script:
   - npm install
-  - psql -c 'create database postgresDb;' -U postgres
+  - psql -c 'create database postgres;' -U postgres
 
