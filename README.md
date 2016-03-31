@@ -38,7 +38,7 @@ koa-postgresql-pool-connector is a wrapper on top of koa-pg ready to use.
 
 ## **Installation** 
 ```
-    $ npm install koa
+    $ npm install koa-postgresql-pool-connector
 ```
 
 ## **API documentation**
