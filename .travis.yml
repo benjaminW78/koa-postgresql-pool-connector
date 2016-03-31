@@ -1,8 +1,12 @@
 language: node_js
 node_js:
   - 5
+before_install:
+  - pip install codecov
 services:
   - postgresql
 before_script:
   - npm install
 
+after_success:
+  - codecov
