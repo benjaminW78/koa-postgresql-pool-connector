@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/benjaminW78/koa-postgresql-pool-connector.svg?branch=master)](https://travis-ci.org/benjaminW78/koa-postgresql-pool-connector) 
 [![codecov.io](https://codecov.io/github/benjaminW78/koa-postgresql-pool-connector/coverage.svg?branch=master)](https://codecov.io/github/benjaminW78/koa-postgresql-pool-connector?branch=master)
 [![david-dm.org](https://david-dm.org/benjaminW78/koa-postgresql-pool-connector.svg)](https://david-dm.org/benjaminW78/koa-postgresql-pool-connector)
+[![devDependency Status](https://david-dm.org/benjaminW78/koa-postgresql-pool-connector/dev-status.svg)](https://david-dm.org/benjaminW78/koa-postgresql-pool-connector#info=devDependencies)
 
 The MIT License (MIT)
 
